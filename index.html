@@ -2,18 +2,27 @@
 <html>
 <head>
     <meta charset="UTF-8">
-  <title>Crazy</title>
+    <title>Crazy</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/movies/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/movies/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/movies/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/movies/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/movies/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
   <video width="640" height="360" controls>
-    <source src="https://objectstorage.us-sanjose-1.oraclecloud.com/p/v8EQF1cejmyb7M8inzqfO256HJA2TPovPnFyr1l7mvJjn-7vTKVkl33hNnVoUXgQ/n/axc7scxx0zwg/b/movies/o/47.mp4" type="video/mp4">
+    <source src="https://objectstorage.us-sanjose-1.oraclecloud.com/n/axc7scxx0zwg/b/movies/o/47.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
 <script>
   var video = document.getElementById("myVideo");
-  video.play();
+  if (video){
+      video.play();
+  }
 </script>
 </body>
 </html>
